@@ -8,7 +8,7 @@
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .2fr 1fr .4fr;
+    grid-template-rows: .2fr 1fr .2fr;
 
     grid-template-areas: 
     "nav"
@@ -49,7 +49,7 @@ nav{
     border-radius: 2px;
     padding: 3px;
 
-    font-weight: 800;
+    font-weight: 1000;
     /* background: black; */
     align-items: center;
     text-align: center;
@@ -75,6 +75,7 @@ ul{
     padding-right: 50px;
     text-decoration: none;
     display: flex;
+
     justify-content: space-between;
 }
 
@@ -82,6 +83,7 @@ li{
     text-decoration: none;
     color: white;
     display: flex;
+    margin-right: 200px;
 
 }
 
@@ -90,7 +92,7 @@ a{
     color: rgb(224, 222, 222);
     text-transform:capitalize;
     justify-content: space-between;
-    padding: 2px;
+    padding: 3px;
     margin-right: 25px;
     border: 1px solid rgb(160, 162, 163);
     font-size: 0.9rem;
@@ -134,7 +136,7 @@ main{
 
 .dashBoard{
 
-    background-color: rgb(23, 120, 195);
+    background-color: rgb(91, 152, 199);
     grid-area: dashBoard;
 
     margin-top: 30px;
@@ -148,7 +150,7 @@ main{
 
 .gameInterphase{
 
-    background-color: rgb(9, 111, 189);
+    background-color: rgb(91, 152, 199);
     grid-area: gameInterphase;
     color: black;
     border: 2px  double black;
@@ -159,4 +161,47 @@ footer{
     background-color: rgb(47, 45, 45);
     grid-area: footer;
 
+}
+
+
+.cryptoFlipGame{
+    position: absolute;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 800px;
+    height: 800px;
+    border: 2px solid black;
+    
+}
+
+.cards{
+    border: 2px solid white;
+    width: calc(25% - 25px);
+    height: calc(33.333% -10px);
+
+    position: relative;
+
+}
+
+.front,
+.back{
+    
+    border: 2px solid white;
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: green;
+
+}
+
+img{
+    width: 250px;
+    height: 150px;
 }
