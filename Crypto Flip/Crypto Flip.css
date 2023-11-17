@@ -1,0 +1,162 @@
+.container{
+    color: white;
+    background: black;
+    padding: 20px;
+
+    height: 100vh;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .2fr 1fr .4fr;
+
+    grid-template-areas: 
+    "nav"
+    "main"
+    "footer";
+}
+
+nav{
+    background-color: rgb(47, 45, 45);
+    grid-area: nav;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.logo{
+    margin-left: 100px;
+    color: black;
+    font-weight: 1000;
+    font-size: 1.5rem;
+
+    border: 1px solid rgb(160, 162, 163);
+    border-radius: 2px;
+    padding: 2px;
+
+
+
+}
+
+.connectWallet{
+    margin-left: 220px;
+    color: black;
+    font-size: 1.rem;
+
+    border: 2px solid black;
+    border-radius: 2px;
+    padding: 3px;
+
+    font-weight: 800;
+    /* background: black; */
+    align-items: center;
+    text-align: center;
+
+    transition: 0.8s;
+}
+
+.connectWallet:hover{
+    background: white;
+    color: black;
+    font-size: 1.05rem;
+    border: 0px;
+
+}
+
+
+.menu{
+    margin-left: 200px;
+    text-decoration: none;
+}
+
+ul{
+    padding-right: 50px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    text-decoration: none;
+    color: white;
+    display: flex;
+
+}
+
+a{
+    text-decoration: none;
+    color: rgb(224, 222, 222);
+    text-transform:capitalize;
+    justify-content: space-between;
+    padding: 2px;
+    margin-right: 25px;
+    border: 1px solid rgb(160, 162, 163);
+    font-size: 0.9rem;
+    text-decoration: white;
+    border-radius: 2px;
+
+    z-index: 100;
+
+    font-weight: 1000;
+    /* background: black;
+    align-items: center;
+    text-align: center; */
+    transition: 1s;
+}
+
+.menu ul li a:hover{
+    background: white;
+    color: black;
+    font-size: 1.0rem;
+
+}
+
+
+
+main{
+    background: black;
+    grid-area: main;
+
+
+    display: grid;
+    grid-template-columns: 0.4fr 1fr ;
+    grid-template-rows: 1fr;
+
+    grid-template-areas: 
+    "dashBoard gameInterphase";
+
+    grid-gap: 0rem;
+
+}
+
+
+.dashBoard{
+
+    background-color: rgb(23, 120, 195);
+    grid-area: dashBoard;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    border-radius: 5px; 
+
+
+}
+
+
+.gameInterphase{
+
+    background-color: rgb(9, 111, 189);
+    grid-area: gameInterphase;
+    color: black;
+    border: 2px  double black;
+    border-radius: 10px; 
+}
+
+footer{
+    background-color: rgb(47, 45, 45);
+    grid-area: footer;
+
+}
