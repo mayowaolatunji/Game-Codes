@@ -1,0 +1,40 @@
+
+main{
+    background: black;
+    grid-area: main;
+
+
+    display: grid;
+    grid-template-columns: 0.4fr 1fr ;
+    grid-template-rows: 1fr;
+
+    grid-template-areas: 
+    "dashBoard gameInterphase";
+
+    grid-gap: 0rem;
+
+}
+
+
+.dashBoard{
+
+    background-color: rgb(91, 152, 199);
+    grid-area: dashBoard;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    border-radius: 5px; 
+
+
+}
+
+
+.gameInterphase{
+
+    background-color: rgb(91, 152, 199);
+    grid-area: gameInterphase;
+    color: black;
+    border: 2px  double black;
+    border-radius: 10px; 
+}
