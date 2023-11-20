@@ -63,11 +63,12 @@ nav{
 }
 
 .connectWallet:hover{
-    background: rgb(195, 193, 193);
+    background: rgb(228, 228, 228);
     color: black;
     font-size: 1.05rem;
     border: 0px solid rgb(27, 25, 25);
-    border-radius: 10px;
+    border-radius: 1px;
+    text-shadow:  0 0 0.3em rgb(72, 70, 70);
 
 }
 
@@ -95,15 +96,16 @@ nav{
 
 .menu ul li a{
     text-decoration: none;
-    color: rgb(224, 222, 222);
+    color: rgb(19, 19, 19);
     text-transform:capitalize;
     justify-content: space-between;
     padding: 3px;
     margin-right: 25px;
     border: 1px solid rgb(160, 162, 163);
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     text-decoration: white;
     border-radius: 2px;
+    text-shadow:  0 0 0.3em rgb(251, 251, 251);
 
     z-index: 100;
 
@@ -115,9 +117,11 @@ nav{
 }
 
 .menu ul li a:hover{
-    background: white;
+    background: rgb(186, 185, 185);
     color: black;
     font-size: 1.0rem;
+    text-shadow:  0 0 0.3em rgb(62, 59, 59);
+
 
 }
 
