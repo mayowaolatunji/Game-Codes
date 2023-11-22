@@ -42,10 +42,12 @@ nav{
 
 .connectWallet{
     margin-left: 250px;
-    color: aliceblue;
+    color: black;
+    background:
+    linear-gradient(-45deg, rgb(122, 186, 200), rgb(59, 175, 237));
     font-size: 1.1rem;
     font-family: cursive;
-
+    position: relative;
 
     text-shadow:  0 0 0.3em white;
 
@@ -59,15 +61,28 @@ nav{
     text-align: center;
 
     -ms-perspective-origin-x: bottom;
-    perspective: -10px;
 
     transition: 0.8s;
+
+
+    transform-style: preserve-3d;
+    transform: 
+    perspective(4000px)
+    rotateX(20deg)
+    rotateY(-10deg);
+}
+
+.connectWallet::before{
+    inset: -1rem;
+    background: 
+    linear-gradient(-45deg, white, black);    
+    transform: translateZ(-60px);
 }
 
 .connectWallet:hover{
     font-family: cursive;
 
-    background: rgb(228, 228, 228);
+    background:  rgb(59, 175, 237);
     color: black;
     font-size: 1.05rem;
     border: 0px solid rgb(27, 25, 25);
@@ -102,7 +117,7 @@ nav{
 
 .menu ul li a{
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(186, 185, 185);
     text-transform:capitalize;
     justify-content: space-between;
     padding: 3px;
@@ -111,7 +126,7 @@ nav{
     font-size: 1.0rem;
     text-decoration: white;
     border-radius: 2px;
-    text-shadow:  0 0 0.3em rgb(251, 251, 251);
+    text-shadow:  0 0 0.3em rgb(205, 203, 203);
 
     z-index: 100;
 
@@ -123,7 +138,8 @@ nav{
 }
 
 .menu ul li a:hover{
-    background: rgb(186, 185, 185);
+     background:
+    linear-gradient(-45deg, rgb(122, 186, 200), rgb(59, 175, 237));
     color: black;
     font-size: 0.9rem;
     text-shadow:  0 0 0.3em rgb(62, 59, 59);
@@ -151,7 +167,8 @@ main{
 
 .dashBoard{
 
-    background-color: rgb(91, 152, 199);
+  background:
+  linear-gradient(-135deg, white, gray);    
     grid-area: dashBoard;
 
     margin-top: 20px;
@@ -163,7 +180,8 @@ main{
 }
 
 .dashBoard table{
-    background: rgb(251, 250, 250);
+    background: rgb(251, 250, 250) ;
+    opacity: 0.3;
     margin-top: 200px;
     margin-left: 150px;
     border: 2px solid black;
@@ -195,7 +213,9 @@ th, td{
 
 .gameInterphase{
 
-    background-color: rgb(91, 152, 199);
+    background:   
+    linear-gradient(-225deg, white, gray, black);    
+
 
     /* background: url(img/Main\ img.jpg) no-repeat cover; */
     grid-area: gameInterphase;
