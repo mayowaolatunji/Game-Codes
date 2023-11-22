@@ -1,6 +1,6 @@
 .container{
     color: white;
-    background: black;
+    background-color: rgb(47, 45, 45);
     padding: 20px;
 
     height: 100vh;
@@ -42,12 +42,14 @@ nav{
 
 .connectWallet{
     margin-left: 250px;
-    color: black;
-    font-size: 1.2rem;
+    color: aliceblue;
+    font-size: 1.1rem;
+    font-family: cursive;
+
 
     text-shadow:  0 0 0.3em white;
 
-    border: 1px solid rgb(3, 3, 3);
+    border: 1px solid rgb(160, 162, 163);
     border-radius: 2px;
     padding: 3px;
 
@@ -63,6 +65,8 @@ nav{
 }
 
 .connectWallet:hover{
+    font-family: cursive;
+
     background: rgb(228, 228, 228);
     color: black;
     font-size: 1.05rem;
@@ -74,6 +78,8 @@ nav{
 
 
 .menu{
+    font-family: cursive;
+
     margin-left: 200px;
     text-decoration: none;
 }
@@ -96,13 +102,13 @@ nav{
 
 .menu ul li a{
     text-decoration: none;
-    color: rgb(19, 19, 19);
+    color: aliceblue;
     text-transform:capitalize;
     justify-content: space-between;
     padding: 3px;
     margin-right: 25px;
     border: 1px solid rgb(160, 162, 163);
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     text-decoration: white;
     border-radius: 2px;
     text-shadow:  0 0 0.3em rgb(251, 251, 251);
@@ -119,7 +125,7 @@ nav{
 .menu ul li a:hover{
     background: rgb(186, 185, 185);
     color: black;
-    font-size: 1.0rem;
+    font-size: 0.9rem;
     text-shadow:  0 0 0.3em rgb(62, 59, 59);
 
 }
@@ -127,7 +133,7 @@ nav{
 
 
 main{
-    background: black;
+    background-color: rgb(47, 45, 45);
     grid-area: main;
 
 
@@ -148,27 +154,61 @@ main{
     background-color: rgb(91, 152, 199);
     grid-area: dashBoard;
 
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
-    border-radius: 5px; 
+    border-radius: 0px; 
 
-
+    position: relative;
 }
+
+.dashBoard table{
+    background: rgb(251, 250, 250);
+    margin-top: 200px;
+    margin-left: 150px;
+    border: 2px solid black;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+th, td{
+    padding: 5px;
+    text-align: center;
+    align-content: content;
+    justify-content: center;
+    font-size: 1.3rem;
+
+    border: 0.5px solid black;
+}
+
+.metrics, .score, .flips, .earnings{
+    display: flex;
+    color: black;
+    position: relative;
+    padding: 20px;
+    margin-left: 20px;
+}
+
 
 
 .gameInterphase{
 
     background-color: rgb(91, 152, 199);
+
+    /* background: url(img/Main\ img.jpg) no-repeat cover; */
     grid-area: gameInterphase;
     color: black;
-    border: 2px  double black;
-    border-radius: 10px; 
+    border: 2px  none black;
+    border-radius: 0px; 
 
     display: flex;
 }
 
 footer{
+
+    font-family: cursive;
     margin-top: 20px;
     margin-bottom: -20px;
     position: relative;
