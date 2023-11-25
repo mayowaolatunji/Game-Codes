@@ -1,6 +1,14 @@
 const cards = document.querySelectorAll(".cards")
 
-const restart = document.querySelector("#restart");
+const restart = document.querySelector(".restart")
+
+
+
+// Dashboard DOM 
+
+const fValue = document.getElementById("fValue");
+const sValue = document.getElementById("sValue");
+const eValue = document.getElementById("eValue");
 
 
 
@@ -45,7 +53,12 @@ function checkForMatch(){
     if(firstCard.dataset.framework === secondCard.dataset.framework){
 
         // if they match=>
-        disableCaards
+        disableCaards()
+
+        fValue.innerText = parseInt(fValue.innerText) + 1; // Increment by 1
+        sValue.innerText = parseInt(sValue.innerText) + 5; // Increment by 5
+        eValue.innerText = parseFloat(eValue.innerText) + 0.5; // Increment by 0.5
+
 
     } else{
         // if they don't match 
@@ -81,7 +94,6 @@ function shuffleCards() {
         card.style.order = randomPos;
     });
 }
-
 shuffleCards()
 
 
@@ -90,10 +102,12 @@ cards.forEach(card => card.addEventListener("click", flipCard))
 
 
 restart.addEventListener("click", () => {
-    cards.forEach(card => {
-        card.classList.remove("flip");
-        card.addEventListener("click", flipCard);
-    });
-    resetBoard();
-    shuffleCards();
+    console.log("Restart button clicked");
+    location.reload();
 });
+
+
+
+
+
+
