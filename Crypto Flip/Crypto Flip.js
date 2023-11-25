@@ -34,39 +34,44 @@ function flipCard(){
 
         // console.log(secondCard.dataset.framework);
 
-        if(firstCard.dataset.framework === secondCard.dataset.framework){
-
-            // if they match=>
-            firstCard.removeEventListener("click", flipCard);
-            secondCard.removeEventListener("click", flipCard);
-
-        } else{
-            // if they don't match 
-
-            flippedCard = true
-
-
-            setTimeout(() => {
-                firstCard.classList.remove("flip")
-                secondCard.classList.remove("flip")
-
-                flippedCard = false // this will disable multiple clicks beyond the 1st & 2nd clicks under 1.2s.
-                resetBoard()
-                
-            }, 1200);}
-
-            
-            function resetBoard(){
-            [flippedCard, lockBoard] =[false, false]
-
-            [firstCard, secondCard] = [null, null];
-
-        }
-
-
+        checkForMatch()
     }
 
+}
+
+
+function checkForMatch(){
     
+    if(firstCard.dataset.framework === secondCard.dataset.framework){
+
+        // if they match=>
+        disableCaards
+
+    } else{
+        // if they don't match 
+
+        unFlipCards()    }
+}
+    
+
+function disableCaards(){
+    firstCard.removeEventListener("click", flipCard);
+    secondCard.removeEventListener("click", flipCard);
+}
+
+function unFlipCards(){
+
+    lockBoard = true;
+
+    setTimeout(() => {
+        firstCard.classList.remove("flip")
+        secondCard.classList.remove("flip")
+        
+        lockBoard = false
+        flippedCard = false // this will disable multiple clicks beyond the 1st & 2nd clicks under 1.2s.
+        resetBoard()
+        
+    }, 1200);
 }
 
 // random operation working...
