@@ -36,7 +36,6 @@ function flipCard(){
 
 
     } else{
-        clickSound()
 
         //second click
         flippedCard = false;
@@ -50,6 +49,8 @@ function flipCard(){
         checkForMatch()
 
         flipSound()
+        clickSound()
+
     }
 }
 
