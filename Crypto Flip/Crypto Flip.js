@@ -26,13 +26,18 @@ function flipCard(){
 
     this.classList.add("flip")
 
+   
+
 
     if(!flippedCard){
         // first card flip
         flippedCard = true;
         firstCard = this;
+
+
     } else{
-    
+        clickSound()
+
         //second click
         flippedCard = false;
         secondCard = this;
@@ -43,8 +48,9 @@ function flipCard(){
         // console.log(secondCard.dataset.framework);
 
         checkForMatch()
-    }
 
+        flipSound()
+    }
 }
 
 
@@ -71,6 +77,18 @@ function disableCaards(){
     firstCard.removeEventListener("click", flipCard);
     secondCard.removeEventListener("click", flipCard);
 }
+
+function flipSound () {
+	let FLIPSOUND = new Audio('audio/flipSound.mp3');
+	FLIPSOUND.play();
+}
+
+
+function clickSound () {
+	let CLICKSOUND = new Audio('audio/clickSound.mp3');
+	CLICKSOUND.play();
+}
+
 
 function unFlipCards(){
 

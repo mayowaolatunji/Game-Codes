@@ -181,7 +181,7 @@ main{
 
 .dashBoard table{
     background: rgb(251, 250, 250) ;
-    opacity: 0.3;
+    opacity: 0.7;
     margin-top: 200px;
     margin-left: 150px;
     border: 2px solid black;
@@ -251,6 +251,7 @@ footer{
     text-decoration: none;
     display: block;
     position: relative;
+    
 }
 
 ul li a{
@@ -269,7 +270,6 @@ ul li a{
     color: rgb(215, 210, 210);   
     text-overflow:ellipsis;
 }
-
 
 
 
@@ -334,7 +334,6 @@ ul li a{
     margin-top: -10px;
     margin-left: -10px;
 
-
     width: 100%;
     height: 100%;
     padding: 10px;
@@ -342,12 +341,10 @@ ul li a{
     opacity: 1;
 
     backface-visibility: hidden; /* to hide the back face of the car after the flip*/
-
 }
 
 
 .front{
-
     transform: rotateY(180deg);
     top: 0px;
 }
