@@ -24,7 +24,7 @@ A click on the first card reveales the front face carring a duplicated M-image. 
 
 If:
 
-The first M-image ==== second M-image then the player scores a point.
+The first M-image === second M-image then the player scores a point.
 
 Else: The first &  second M-image are flipped back to the front face.
 
