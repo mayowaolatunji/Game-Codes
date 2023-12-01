@@ -29,3 +29,9 @@ The first M-image === second M-image then the player scores a point.
 Else: The first &  second M-image are flipped back to the front face.
 
 
+### -The M-Image function.
+
+The M in the M-image is defined as "Marketing." The term was derived as each image displayed per flip would be a marketing graphic stored for each section.
+
+This image could be a logo, colourful design or meme of or about a web3 brand or concept. The image or design would probabilistically serve as sharable content for each quest.
+
