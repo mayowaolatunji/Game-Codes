@@ -35,3 +35,4 @@ The M in the M-image is defined as "Marketing." The term was derived as each ima
 
 This image could be a logo, colourful design or meme of or about a web3 brand or concept. The image or design would probabilistically serve as sharable content for each quest.
 
+`Add the source code snippet for the M-image function here.`
