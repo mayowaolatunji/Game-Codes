@@ -44,5 +44,6 @@ This image could be a logo, colourful design or meme of or about a web3 brand or
 
 
 ## Additional Subheadings
-
+- **Token Minting Mechanism**: This section should explain the mechanism for minting tokens as rewards for the winners.
+- **Web3 Marketing Quests**: This section should provide details about the web3 marketing quests and how they are integrated into the game.
 
