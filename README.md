@@ -42,3 +42,7 @@ function mImageFunction() {
 
 This image could be a logo, colourful design or meme of or about a web3 brand or concept. The image or design would probabilistically serve as sharable content for each quest.
 
+
+## Additional Subheadings
+
+
