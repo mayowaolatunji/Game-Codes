@@ -9,6 +9,18 @@ Each winners are rewarded with convertable points that are minted into exchangea
 
 ## Game Design & architecture.
 
+Game design and architecture defines the structure and framework for a video game, including the game mechanics, level design, and overall user experience. It involves the planning and organization of the game's elements to ensure a cohesive and engaging gameplay experience.
+
+Here are some key aspects of game design and architecture include:
+
+Game mechanics: defining the rules and interactions within the game, such as movement, and action pattern.
+
+Level design: This defines the layout and structure of the game's environments to provide a balanced and challenging experience for the player.
+
+User experience (UX) design: focusing on the overall feel and usability of the game, including interface design, controls, and player feedback.
+
+Story and narrative design: developing the storyline and characters within the game to create a compelling and immersive world for the player to explore.
+
 ### -Game Layout
 
 The first release of the game is a 12 card game with 3*4 layout.
@@ -45,6 +57,7 @@ This image could be a logo, colourful design or meme of or about a web3 brand or
 
 ## Additional Subheadings
 - **Token Minting Mechanism**: This section should explain the mechanism for minting tokens as rewards for the winners.
-- **Web3 Marketing Quests**: This section should provide details about the web3 marketing quests and how they are integrated into the game.
-- **Cryptocurrency Exchange Integration**: This section should explain how the convertible points are minted into exchangeable cryptocurrencies and the integration with a cryptocurrency exchange platform
 
+- **Web3 Marketing Quests**: This section should provide details about the web3 marketing quests and how they are integrated into the game.
+
+- **Cryptocurrency Exchange Integration**: This section should explain how the convertible points are minted into exchangeable cryptocurrencies and the integration with a cryptocurrency exchange platform.
