@@ -11,7 +11,7 @@ Each winners are rewarded with convertable points that are minted into exchangea
 
 Game design and architecture defines the structure and framework for a video game, including the game mechanics, level design, and overall user experience. It involves the planning and organization of the game's elements to ensure a cohesive and engaging gameplay experience.
 
-Here are some key aspects of game design and architecture include:
+***Here are some key aspects of game design and architecture include:***
 
 Game mechanics: defining the rules and interactions within the game, such as movement, and action pattern.
 
